@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudades Turísticas</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Destinos Turisticos Recomendados</h1>
+    </header>
+    <main>
+        <div class="city-list" id="city-list">
+            <!-- Las ciudades se agregan dinámicamente aca -->
+        </div>
+
+        <div class="form-container">
+            <h2>Agregar Nueva Ciudad</h2>
+            <form id="city-form">
+                <label for="city-name">Nombre de la Ciudad:</label>
+                <input type="text" id="city-name" required>
+                
+                <label for="attraction-1">Atracción 1:</label>
+                <input type="text" id="attraction-1" required>
+                
+                <label for="attraction-2">Atracción 2:</label>
+                <input type="text" id="attraction-2" required>
+                
+                <label for="attraction-3">Atracción 3:</label>
+                <input type="text" id="attraction-3" required>
+                
+                <label for="city-image">URL de la Imagen:</label>
+                <input type="text" id="city-image-url">
+
+                <button type="submit">Agregar Ciudad</button>
+            </form>
+        </div>
+    </main>
+    <div id="notification" class="notification">
+        <span id="notification-text"></span>
+        <button id="close-notification">X</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

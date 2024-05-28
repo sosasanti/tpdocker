@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Londres",
+        "image": "https://static.eldiario.es/clip/ac5016f6-7afd-43f8-9d87-f38c82e5a9f1_16-9-discover-aspect-ratio_default_0.jpg",
+        "attractions": ["Big Ben", "London Eye", "Torre de Londres"]
+    },
+    {
+        "name": "Berlín",
+        "image": "https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2023-08/Berlin-Skyline-City_1.jpg",
+        "attractions": ["Puerta de Brandeburgo", "Muro de Berlín", "Reichstag"]
+    },
+    {
+        "name": "Ámsterdam",
+        "image": "https://img2.rtve.es/i/?w=1600&i=1698226240350.jpg",
+        "attractions": ["Museo Van Gogh", "Casa de Ana Frank", "Canales de Ámsterdam"]
+    },
+    {
+        "name": "Barcelona",
+        "image": "https://wp.growproexperience.com/wp-content/uploads/2022/06/vivir-barcelona_cover.jpg",
+        "attractions": ["Sagrada Familia", "Parque Güell", "Casa Batlló"]
+    },
+    {
+        "name": "Venecia",
+        "image": "https://media.admagazine.com/photos/6272a4f879a42d127518492f/16:9/w_2560%2Cc_limit/Puente%2520Rialto%2520Venecia.jpg",
+        "attractions": ["Gran Canal", "Plaza de San Marcos", "Puente de Rialto"]
+    },
+    {
+        "name": "Praga",
+        "image": "https://www.revistadeck.com/wp-content/uploads/Praga.jpg",
+        "attractions": ["Puente de Carlos", "Castillo de Praga", "Reloj Astronómico"]
+    },
+    {
+        "name": "Budapest",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/budapest-danubio-parlamento-1552491234.jpg",
+        "attractions": ["Parlamento de Budapest", "Puente de las Cadenas", "Baños Széchenyi"]
+    },
+    {
+        "name": "Florencia",
+        "image": "imagesflorence",
+        "attractions": ["Catedral de Florencia", "Galería Uffizi", "Ponte Vecchio"]
+    },
+    {
+        "name": "Viena",
+        "image": "https://www.civitatis.com/f/italia/florencia/free-tour-florencia-589x392.jpg",
+        "attractions": ["Palacio de Schönbrunn", "Catedral de San Esteban", "Ópera Estatal de Viena"]
+    },
+    {
+        "name": "Atenas",
+        "image": "https://www.civitatis.com/f/grecia/atenas/atenas-m.jpg",
+        "attractions": ["Acrópolis", "Partenón", "Plaza Syntagma"]
+    },
+    {
+        "name": "Moscú",
+        "image": "https://www.iberia.com/wcs/imagenes/guias/MOSCU/MOSCU.JPG",
+        "attractions": ["Plaza Roja", "Kremlin", "Catedral de San Basilio"]
+    },
+    {
+        "name": "Dubái",
+        "image": "https://media.ambito.com/p/0178b04409759a0221a1954ac721e4c9/adjuntos/239/imagenes/040/153/0040153527/1200x675/smart/dubaijpg.jpg",
+        "attractions": ["Burj Khalifa", "Palm Jumeirah", "Dubai Mall"]
+    },
+    {
+        "name": "Hong Kong",
+        "image": "https://media.ambito.com/p/1e412182e833264eb11679d4dc029071/adjuntos/239/imagenes/040/536/0040536842/hong-kong.jpg",
+        "attractions": ["Victoria Peak", "Templo Man Mo", "Avenida de las Estrellas"]
+    },
+    {
+        "name": "Sídney",
+        "image": "https://media.iatiseguros.com/wp-content/uploads/2019/04/04011211/que-hacer-sidney-6.jpg",
+        "attractions": ["Ópera de Sídney", "Puente de la Bahía de Sídney", "Bondi Beach"]
+    }
+]
