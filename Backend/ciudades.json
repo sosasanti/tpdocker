@@ -36,7 +36,7 @@
     },
     {
         "name": "Florencia",
-        "image": "imagesflorence",
+        "image": "https://viajes.nationalgeographic.com.es/medio/2018/02/27/mapa-florencia__1280x720.jpg",
         "attractions": ["Catedral de Florencia", "Galería Uffizi", "Ponte Vecchio"]
     },
     {
@@ -68,5 +68,56 @@
         "name": "Sídney",
         "image": "https://media.iatiseguros.com/wp-content/uploads/2019/04/04011211/que-hacer-sidney-6.jpg",
         "attractions": ["Ópera de Sídney", "Puente de la Bahía de Sídney", "Bondi Beach"]
+    },
+
+    {
+        "name": "Sao Paulo",
+        "image": "https://lirp.cdn-website.com/780ef057/dms3rep/multi/opt/morro-de-sao-paulo-640w.jpg",
+        "attractions": ["Avenida Paulista", "Parque Ibirapuera", "Mercado Municipal de São Paulo"]
+    },
+    {
+        "name": "Lima",
+        "image": "https://noticias-pe.laiglesiadejesucristo.org/media/960x540/Lima-4.jpg",
+        "attractions": ["Plaza Mayor de Lima", "Circuito Mágico del Agua", "Museo Larco"]
+    },
+    {
+        "name": "Bogota",
+        "image": "https://www.civitatis.com/blog/wp-content/uploads/2022/10/panoramica-plaza-bolivar-bogota.jpg",
+        "attractions": ["Museo del Oro", "Cerro de Monserrate", "Plaza de Bolívar"]
+    },
+    {
+        "name": "Montevideo",
+        "image": "https://ellasviajeras.com/wp-content/uploads/2023/07/plazaindependenciamontevideu-1170x605.jpg",
+        "attractions": ["Plaza Independencia", "Mercado del Puerto", "Rambla de Montevideo"]
+    },
+    {
+        "name": "Nueva York",
+        "image": "https://www.civitatis.com/blog/wp-content/uploads/2016/05/Estatua-de-la-Libertad.jpg",
+        "attractions": ["Times Square", "Central Park", "Estátua de la Libertad"]
+    },
+    {
+        "name": "Los Angeles",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Terqb7a2bB5l8E6UE4EQ0ruhZVHot3mupQ&s",
+        "attractions": ["Hollywood", "Universal Studios Hollywood", "Santa Mónica Pier"]
+    },
+    {
+        "name": "Chicago",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-emJTJ5s0SbDOKT0kgOA-QzqMxZjZ9dnng&s",
+        "attractions": ["Millennium Park", "The Art Institute of Chicago", "Navy Pier"]
+    },
+    {
+        "name": "Las Vegas",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7h1wjGtYUTG-pFQSa1xsxUtd_oXAa4pNRXQ&s",
+        "attractions": ["The Strip", "Fremont Street Experience", "Red Rock Canyon National Conservation Area"]
+    },
+    {
+        "name": "San Francisco",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6VkeOVxTiUW46dXdv9XPOrkxs-9aL6yBow&s",
+        "attractions": ["Golden Gate Bridge", "Alcatraz Island", "Fisherman's Wharf"]
+    },
+    {
+        "name": "Miami",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2E55FVdJlaFSXVaDj-EFuvTSDo2QV_mmP7A&s",
+        "attractions": ["South Beach", "Art Deco Historic District", "Everglades National Park"]
     }
 ]

@@ -8,6 +8,7 @@ const path = require('path');
 const app = express();
 app.use(cors());
 const PORT = 3000;
+app.use(express.json());
 
 const DB_URL = 'http://couchdbserver:5984/data';
 const COUCH_USER = 'admin';
@@ -18,11 +19,18 @@ const db = new pouchdb(DB_URL, {
     auth: {username: COUCH_USER, password: COUCH_PASS}
 })
 
+let ciudadesBD = [];
+
 async function getCiudades() {
 
     try {
         const result = await db.allDocs({ include_docs: true });
         const data = result.rows.map(row => row.doc);
+        for (let i = 0; i < data.length; i++) {
+            if (!ciudadesBD.includes(data[i].data.name)){
+                ciudadesBD.push(data[i].data.name);
+            }
+        }
         return data;
     } catch (error) {
         throw new Error("Error al obtener datos de la BD: " + error);
@@ -41,14 +49,34 @@ async function insertarCiudad(data) {
     }
 }
 
-app.use(express.json());
+async function insertarCiudadRandom() {
+    try {
+        const data = await fs.readFile(path.join(__dirname, 'ciudades.json'), 'utf8');
+        const jsonData = JSON.parse(data);
+        const randomIndex = Math.floor(Math.random() * jsonData.length);
+        const ciudadaInsertar = jsonData[randomIndex];
+        const result = null;
+        if (!ciudadesBD.includes(ciudadaInsertar.name)) {
+            result = await insertarCiudad(ciudadaInsertar);
+            ciudadesBD.push(jsonData[randomIndex].name);
+        }
+        else {
+            console.log("La ciudad ya existe en la BD");
+            result = "La ciudad ya existe en la BD";
+        }
+        return result;
+    } catch (error) {
+        console.log("Error al insertar nueva ciudad random: " + error.message);
+    }
+}
+
 
 app.get('/ciudades', async (req, res) => {
     try {
         const data = await getCiudades();
         res.json(data);
     } catch (error) {
-        req.logger.error("Error al obtener datos de la BD: " + error.message);
+        console.log("Error al obtener datos de la BD: " + error.message);
         res.status(500).send({ error: error.message });
     }
 });
@@ -64,20 +92,8 @@ app.post('/ciudades', async (req, res) => {
     }
 });
 
-async function insertarCiudadRandom() {
-    try {
-        const data = await fs.readFile(path.join(__dirname, 'ciudades.json'), 'utf8');
-        const jsonData = JSON.parse(data);
-        const randomIndex = Math.floor(Math.random() * jsonData.length);
-        const result = await insertarCiudad(jsonData[randomIndex]);
-        return result;
-    } catch (error) {
-        console.log("Error al insertar nueva ciudad random: " + error.message);
-    }
-}
-
-// Insertar una nueva ciudad cada 10 segundos
-setInterval(insertarCiudadRandom, 10000);
+// Insertar una nueva ciudad cada 15 segundos
+setInterval(insertarCiudadRandom, 15000);
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://127.0.0.1:${PORT}`);
